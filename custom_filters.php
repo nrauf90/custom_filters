@@ -154,17 +154,20 @@ class CustomFilters{
                             </li>
 						<?php
 						endwhile;
-						// Pagination
-						echo paginate_links(array(
-							'total' => $query->max_num_pages,
-							'current' => $paged,
-						));
-						wp_reset_postdata();
+
 					else :
 						echo 'No posts found.';
 					endif;
 					?>
                 </ul>
+                <?php
+                // Pagination
+                echo paginate_links(array(
+	                'total' => $query->max_num_pages,
+	                'current' => $paged,
+                ));
+                wp_reset_postdata();
+                ?>
             </div>
         </div>
 

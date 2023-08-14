@@ -1,0 +1,25 @@
+.custom-filters-container{
+    padding: 20px;
+}
+
+.custom-filters-form{
+    padding: 10px;
+}
+.custom-filters-form select,.custom-filters-form input[type='date'] {
+    padding: 10px 5px;
+    margin: 5px;
+    border: 1px solid #E8E8E8;
+    border-radius: 5px;
+}
+
+.custom-filters-form input[type="submit"]{
+    padding: 10px 10px;
+    border: 1px solid #E8E8E8;
+    border-radius: 5px;
+}
+.customer-filters-results ul.custom-filters-posts{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
